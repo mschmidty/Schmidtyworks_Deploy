@@ -1615,64 +1615,167 @@
     <h1 class="entry-title">
 
 
-    <a href="/blog/nepa/2015/05/11/NEPA.html">NEPA</a>
+    <a href="/blog/computer-science/programming/statistics/2015/05/22/downloading-r.html">Downloading R</a>
 
 </h1>
-<div class="entry-content"><p>If you are a federal land manager, the holy grail of all statutes is the <a href="http://en.wikipedia.org/wiki/National_Environmental_Policy_Act">National Environmental Policy Act of 1970</a>, or NEPA, as most of us like to call it. So what exactly is NEPA and why is everyone always talking about it? I wish I knew….</p>
+<div class="entry-content"><p>I recently went to a BLM training taht was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
 
-<h2 id="history">History</h2>
+<p>Note: I use a mac at home and I downloaded R on my home machine.  I use a PC at work and if I get R working on my work machine I’ll update this tutorial.</p>
 
-<p>In the early 1960s, due to several environmental catastrophes, the United States public started to pressure the federal government to pass legislation that protected the environment.  Over the next decade and a half several environmental statues were passed: Clean Air Act, Clean Water Act, Endangered Species Act and the National Environmental Policy Act, NEPA.  NEPA was enacted to help federally funded projects consider not just projects cost, efficiency, and development, but projects effects to the environment as well. The preamble lays out NEPA’s purpose nicely:</p>
+<h2 id="the-terminal">The Terminal</h2>
 
-<p class="quote">“To declare national policy which will encourage productive and enjoyable harmony between man and his environment; to promote efforts which will prevent or eliminate damage to the environment and biosphere and stimulate the health and welfare of man; to enrich the understanding of the ecological systems and natural resources important to the Nation…”</p>
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/terminal-icon.png" alt="R Logo" />
+</div>
 
-<p>tldr: NEPA helps us prevent environmental damage.</p>
+<p>All of this work will be done inside the terminal. Terminal comes pre-installed with Mac OSX and can be found in your utilities folder. If you aren’t familiar with the terminal you should be.  Without going into too much detail the terminal allows you to do really cool things with your machine with short commands.  For example, you can run a server, open a program, create a file, access a remote surver, compile data, make a website, download programs and download and run R. For a short tutorial check <a href="http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">here</a></p>
 
-<h2 id="what-is-nepa">What is NEPA?</h2>
+<h2 id="get-homebrew">Get Homebrew</h2>
 
-<p>Whenever a federal action occurs, NEPA requires that we analyze that action’s affects on the natural environment. This allows both federal employees and the public to be informed of federal actions and allows for an inclusive planning process. Within the government, it requires biologists, ecologists, archaeologists, hydrologists, etc. to analyze effects of a project to the natural and cultural environment. And it requires the public to be informed of future actions and give them a chance to comment on actions before they are implemented.</p>
+<p>I used homebrew to install “r” and its dependencies on my machine.  If you don’t have homebrew, you can find a tutorial on <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation">how to download it here</a> and <a href="http://brew.sh/">what it is here</a>.</p>
 
-<h2 id="how-is-it-done">How is it Done?</h2>
+<h2 id="too-technical">Too Technical?</h2>
+<p>You can also download R from a mirror at their <a href="http://www.r-project.org/">website</a> if this all seems a little too technical (but come on, release your inner geek!).</p>
 
-<p>So, what do federal agencies have to do to comply with NEPA? All actions have to be analyzed and documented in one or more of the following documents:</p>
+<h2 id="download">Download</h2>
 
-<ol>
-  <li><strong><a href="http://en.wikipedia.org/wiki/National_Environmental_Policy_Act#Preparation_of_a_Categorical_Exclusion">Categorical Exclusion(CatEx)</a></strong> are: <em>“a category of actions which do not individually or cumulatively have a significant effect on the human environment and which have been found to have no such effect in procedures adopted by a Federal agency…</em> therefore, neither an environmental assessment nor an environmental impact statement is required._” (<a href="http://www.gpo.gov/fdsys/pkg/CFR-2010-title40-vol32/pdf/CFR-2010-title40-vol32-sec1508-4.pdf">40 C.F.R. §1508.4</a>)</li>
-  <li><strong><a href="http://en.wikipedia.org/wiki/Environmental_impact_assessment#United_States">Environmental Assessment (EA):</a></strong> If a proposed action does not fall within CatEx, your first step in the NEPA process is an EA. Through environmental analysis in an EA, two outcomes can result: (a) a finding of no significant impact (FONSI), in which case the project may continue <a href="http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=3b36d48d544a2636ce097db169b41c9c&amp;ty=HTML&amp;h=L&amp;mc=true&amp;r=PART&amp;n=pt40.33.1508#se40.33.1508_19">(40 CFR §1508.9)</a>; or (b) you find that the action will lead to <strong>significant</strong> impacts and further analysis is required in an:</li>
-  <li><strong><a href="http://en.wikipedia.org/wiki/Environmental_impact_statement">Environmental Impact Statement (EIS):</a></strong> are used to help make informed decisions on projects that will have <strong>significant</strong> environemtal effects.</li>
-</ol>
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/rlogo.png" alt="R Logo" />
+</div>
 
-<h2 id="what-is-significant">What is Significant?</h2>
-<p>During the course of taking various introductory NEPA courses, I really couldn’t figure out how to define significance.  And, being that one of the most important NEPA decision is to determine significance, it was frusturating to find that the threshold for significance was so ambigouse and difficult to figure out. So what do the regulations say:</p>
+<p>To download, open up your terminal and type the following as individual commands:</p>
 
-<p>In general to determine significance, you must consider both “context” and “intensity” of an action.</p>
+<pre><code class="language-bash">
+$ brew cask install xquartz
+$ brew tap homebrew/science
+$ brew install r
+$ brew doctor
 
-<p class="quote"><strong>Context:</strong> “This means that the significance of an action must be analyzed in several contexts such as society as a whole (human, national), the affected region, the affected interests, and the locality. Significance varies with the setting of the proposed action. For instance, for a site-specific action, significance would usually depend upon the effects in the locale rather than in the world as a whole. Both short-term and long-term effects are relevant.” <a href="http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=3b36d48d544a2636ce097db169b41c9c&amp;ty=HTML&amp;h=L&amp;mc=true&amp;r=PART&amp;n=pt40.33.1508#se40.33.1508_127">(40 CFR §1508.27)</a></p>
+</code></pre>
 
-<p>And</p>
+<p>Its a good idea to check if everything installed correctly by typing:</p>
 
-<p class="quote"><strong>Intensity</strong> “This refers to the severity of effect. Responsible officials must bear in mind that more than one agency may make decisions about partial aspects of a major action….” <a href="http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=3b36d48d544a2636ce097db169b41c9c&amp;ty=HTML&amp;h=L&amp;mc=true&amp;r=PART&amp;n=pt40.33.1508#se40.33.1508_127">(40 CFR §1508.27)</a></p>
+<pre><code class="language-bash">
+$ r
+</code></pre>
 
-<p>What I get out of all of that is that “It depends”.  What I am coming to understand more and more is that NEPA is not always a clear path, but more often a helpful guide. After reading the CFRs I didn’t really understand how to come to a significance determination clearly. I did see a good example that helped me understand context and intensity better:</p>
+<p>And you should get the following:</p>
 
-<p class="quote">”…let’s say a project would adversely affect 1 acre of salamander habitat. The impact would be significant if it were the last acre of habitat in the state, but would not be significant if there were a million acres of habitat in the state.” <a href="http://www.ntc.blm.gov/krc/uploads/310/Lesson3_Significance-12-18-09.pdf">(BLM NTC)</a></p>
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
 
-<h2 id="whats-important">What’s Important?</h2>
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
 
-<p>So if significance is ambiguous, what is NEPA really for.  Well, I’m not really the one to ask but…. It seems like what is most important about NEPA is analyzing project effects and laying out your rationale for the decisions that you ultimately will make with that rationale. In other words, if you determine what effect your project will have on the human environment and then take that analysis and clearly explain how you came to a conclusion you are doing NEPA.</p>
+  Natural language support but running in an English locale
 
-<h2 id="in-closing">In Closing</h2>
-<p>If there’s one thing that I’ve learned about NEPA its that its a hard topic to grasp completely without doing it a lot.  It always baffles me how almost everyone I ask interprets how to do NEPA correctly, differently.  So if you’re like me, and you have just started working on NEPA, hopefully you don’t get too wrapped up in the right or wrong way to do it.</p>
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
 
-<h2 id="resources">Resources:</h2>
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
 
-<h3 id="handbooks">Handbooks</h3>
+&gt;
+
+</code></pre>
+
+<p>Now, with R still running lets try a few things:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>And that’s all there is to it, you have now downloaded R.</p>
+
+<h2 id="sublime-text">Sublime Text</h2>
+
+<div>
+  <img src="/images/post-images/downloading-r/sublime-screen-shot.jpg" alt="Sublime Text 3 Screenshot" />
+</div>
+
+<p class="photo-tag">Screen grab of my whole blog.</p>
+
+<p>I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
+
+<p>To create a keybinding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
+
+<pre><code class="language-bash">
+ // Executes a selection of text in REPL
+{ "keys": ["control+shift+j"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+
+// Executes the entire file (build) in REPL
+{ "keys": ["control+shift+k"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+   
+// Executes line(s) of text in REPL terminal
+{ "keys": ["control+shift+l"], "command": "repl_transfer_current", "args": {"scope": "lines"}}
+
+</code></pre>
+
+<p>Now we can open sublime create a file like we did above:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>Go to Tools&gt;SublimeREPL&gt;R and an new window should pop up with the R warning:</p>
+
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt;
+
+</code></pre>
+
+<p>And you should be able to highlight your r text:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>and press cntr+shift+j and your code should compile in the window running R.</p>
+
+<p>Now you’re ready to use or learn R in a very nice working environment.</p>
+
+<h2 id="resources">Resources</h2>
+
 <ul>
-  <li><strong><a href="http://www.fs.fed.us/emc/nepa/includes/wo_1909_15_30.pdf">Forest Service NEPA Handbook</a></strong></li>
-  <li><strong><a href="http://www.blm.gov/pgdata/etc/medialib/blm/wo/Information_Resources_Management/policy/blm_handbook.Par.24487.File.dat/h1790-1-2008-1.pdf">BLM NEPA Handbook</a></strong></li>
+  <li><a href="https://www.youtube.com/watch?v=qPk0YEKhqB8&amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;index=4">Video on how to use microsoft data in R</a></li>
+  <li><a href="http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf">Stats for Biologists with R</a></li>
+  <li><a href="http://www.alshum.com/sublime/">How to get sublime text working with R</a></li>
 </ul>
-
-<p><em>Note: I am not a NEPA expert.  Far from it actually, if anyone out there is interested in contributing to this discussion that is a NEPA expert, I would love to hear from you or, even better, have you write a guest post. Contact me at schmidtyworks@gmail.com.</em></p>
 
 </div>
     <h4 class="left margin-main"><a href="/articles">More Articles >></a></h4>

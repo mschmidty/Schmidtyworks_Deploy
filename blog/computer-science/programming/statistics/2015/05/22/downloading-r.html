@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>The Web and Biology | Schmidtyworks</title>
+    <title>Downloading R</title>
     <meta name="description" content="My thoughts on land management as a wildlife biologist for the Bereau of Land Management. 
 ">
     <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="canonical" href="//articles/">
+    <link rel="canonical" href="//blog/computer-science/programming/statistics/2015/05/22/downloading-r.html">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
     // Picture element HTML5 shiv
@@ -1608,54 +1608,192 @@
 
       <main id="content">
 
-        <div class="module col-1">
-<h1>Articles</h1>
+        <div class="post">
 
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/computer-science/programming/statistics/2015/05/22/downloading-r.html">Downloading R</a></h2>
-      <p>I recently went to a BLM training taht was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
+  <div class="post-header module col-1">
+    <h1 class="post-title">Downloading R</h1>
+    <p class="post-meta">May 22, 2015</p>
+  </div>
+
+  <article class="module col-1">
+    <p>I recently went to a BLM training taht was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
+
+<p>Note: I use a mac at home and I downloaded R on my home machine.  I use a PC at work and if I get R working on my work machine I’ll update this tutorial.</p>
+
+<h2 id="the-terminal">The Terminal</h2>
+
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/terminal-icon.png" alt="R Logo" />
+</div>
+
+<p>All of this work will be done inside the terminal. Terminal comes pre-installed with Mac OSX and can be found in your utilities folder. If you aren’t familiar with the terminal you should be.  Without going into too much detail the terminal allows you to do really cool things with your machine with short commands.  For example, you can run a server, open a program, create a file, access a remote surver, compile data, make a website, download programs and download and run R. For a short tutorial check <a href="http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">here</a></p>
+
+<h2 id="get-homebrew">Get Homebrew</h2>
+
+<p>I used homebrew to install “r” and its dependencies on my machine.  If you don’t have homebrew, you can find a tutorial on <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation">how to download it here</a> and <a href="http://brew.sh/">what it is here</a>.</p>
+
+<h2 id="too-technical">Too Technical?</h2>
+<p>You can also download R from a mirror at their <a href="http://www.r-project.org/">website</a> if this all seems a little too technical (but come on, release your inner geek!).</p>
+
+<h2 id="download">Download</h2>
+
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/rlogo.png" alt="R Logo" />
+</div>
+
+<p>To download, open up your terminal and type the following as individual commands:</p>
+
+<pre><code class="language-bash">
+$ brew cask install xquartz
+$ brew tap homebrew/science
+$ brew install r
+$ brew doctor
+
+</code></pre>
+
+<p>Its a good idea to check if everything installed correctly by typing:</p>
+
+<pre><code class="language-bash">
+$ r
+</code></pre>
+
+<p>And you should get the following:</p>
+
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt;
+
+</code></pre>
+
+<p>Now, with R still running lets try a few things:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>And that’s all there is to it, you have now downloaded R.</p>
+
+<h2 id="sublime-text">Sublime Text</h2>
+
+<div>
+  <img src="/images/post-images/downloading-r/sublime-screen-shot.jpg" alt="Sublime Text 3 Screenshot" />
+</div>
+
+<p class="photo-tag">Screen grab of my whole blog.</p>
+
+<p>I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
+
+<p>To create a keybinding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
+
+<pre><code class="language-bash">
+ // Executes a selection of text in REPL
+{ "keys": ["control+shift+j"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+
+// Executes the entire file (build) in REPL
+{ "keys": ["control+shift+k"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+   
+// Executes line(s) of text in REPL terminal
+{ "keys": ["control+shift+l"], "command": "repl_transfer_current", "args": {"scope": "lines"}}
+
+</code></pre>
+
+<p>Now we can open sublime create a file like we did above:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>Go to Tools&gt;SublimeREPL&gt;R and an new window should pop up with the R warning:</p>
+
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt;
+
+</code></pre>
+
+<p>And you should be able to highlight your r text:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+
+</code></pre>
+
+<p>and press cntr+shift+j and your code should compile in the window running R.</p>
+
+<p>Now you’re ready to use or learn R in a very nice working environment.</p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=qPk0YEKhqB8&amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;index=4">Video on how to use microsoft data in R</a></li>
+  <li><a href="http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf">Stats for Biologists with R</a></li>
+  <li><a href="http://www.alshum.com/sublime/">How to get sublime text working with R</a></li>
+</ul>
 
 
-    </div>
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/endangered/species/usfs/2015/05/14/esa.html">The Endangered Species Act</a></h2>
-      <p>The Endangered Species Act (ESA) is one fo the most successful conservation Acts in the United States. The supreme court determined that the act is intended to <em>“halt and reverse the trend toward species exctinction, whatever the cost.”</em>  Here’s a little history and a little on how ESA works being a wildlife biologist.</p>
-
-
-    </div>
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/nepa/2015/05/11/NEPA.html">NEPA</a></h2>
-      <p>If you are a federal land manager, the holy grail of all statutes is the <a href="http://en.wikipedia.org/wiki/National_Environmental_Policy_Act">National Environmental Policy Act of 1970</a>, or NEPA, as most of us like to call it. So what exactly is NEPA and why is everyone always talking about it?</p>
-
-
-    </div>
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/chronicle/workflow/2015/01/16/chronicle-I.html">Chronicle I</a></h2>
-      <p>The chronicle is a short list of the tools that I’m using that help me do my job and some odds and ends that make life a little better.</p>
-
-
-    </div>
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/hiring/feds/usajobs/2014/10/01/Navigating-The-Federal-Hiring-System.html">The Federal Hiring System</a></h2>
-      <p>I just applied for a new job with the federal government.  One week after applying for the position I was notified that I was “not referred” to the selecting officials for the position that I applied for with no justification. Fast forward two days later, for the same job, and after several phone calls and emails to human resources, I was referred to the hiring officials as one of the top candidates for the position.</p>
-
-
-    </div>
-  
-    <div class="articles-thumb">
-      <h2><a href="/blog/science/2014/09/24/Why-am-i-blogging.html">Why am I Blogging?</a></h2>
-      <p>This is my first blog post on <a href="http://schmidtyworks.com">schmidtyworks.com</a>.  That being the case, I wanted to make some goals for this site and layout why I’ve decided to put my hat in the blogging ring. First a little bit of background.</p>
-
-
-    </div>
-  
+  </article>
 
 </div>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'schmidtyworks'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
       </main>
 
 
