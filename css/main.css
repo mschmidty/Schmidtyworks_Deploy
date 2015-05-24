@@ -403,22 +403,6 @@ p {
   font-size: 1em;
   line-height: 1.5em; }
 
-pre {
-  white-space: pre-wrap;
-  width: 90%;
-  background-color: #111111;
-  text-align: left;
-  margin: 0 auto;
-  padding-left: 0.5em;
-  border-radius: 4px;
-  display: block; }
-
-code {
-  font-family: Courier, 'New Courier', monospace;
-  text-align: left;
-  color: #b9bdb6;
-  width: 100%; }
-
 /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+bash+http+r+scss&plugins=line-numbers */
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -447,8 +431,7 @@ code[class*="language-"], pre[class*="language-"] {
 pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
-  overflow: auto;
-  border-radius: 0.3em; }
+  overflow: auto; }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
   background: #272822; }
@@ -531,6 +514,19 @@ pre.line-numbers > code {
   display: block;
   padding-right: 0.8em;
   text-align: right; }
+
+pre {
+  white-space: pre-wrap;
+  background-color: #111111;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 0.5em;
+  border-radius: 4px;
+  display: block; }
+
+@media all and (max-width: 700px) {
+  pre {
+    border-radius: 0; } }
 
 .page-content {
   position: relative;

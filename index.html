@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="canonical" href="//">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/prism.js" async></script>
     <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -1615,10 +1616,10 @@
     <h1 class="entry-title">
 
 
-    <a href="/blog/computer-science/programming/statistics/2015/05/22/downloading-r.html">Downloading R</a>
+    <a href="/blog/2015/05/22/downloading-r.html">Downloading R</a>
 
 </h1>
-<div class="entry-content"><p>I recently went to a BLM training taht was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
+<div class="entry-content"><p>I recently went to a BLM training that was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
 
 <p>Note: I use a mac at home and I downloaded R on my home machine.  I use a PC at work and if I get R working on my work machine I’ll update this tutorial.</p>
 
@@ -1645,12 +1646,10 @@
 
 <p>To download, open up your terminal and type the following as individual commands:</p>
 
-<pre><code class="language-bash">
-$ brew cask install xquartz
+<pre><code class="language-bash">$ brew cask install xquartz
 $ brew tap homebrew/science
 $ brew install r
 $ brew doctor
-
 </code></pre>
 
 <p>Its a good idea to check if everything installed correctly by typing:</p>
@@ -1704,9 +1703,9 @@ Type 'q()' to quit R.
 
 <p class="photo-tag">Screen grab of my whole blog.</p>
 
-<p>I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
+<p>Most people can stop here.  You have R downloaded and you can start working with it.  However, if you enjoy improving you work environment like I do you can further improve your workflow if you want. I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
 
-<p>To create a keybinding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
+<p>To create a key-binding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
 
 <pre><code class="language-bash">
  // Executes a selection of text in REPL
@@ -1765,7 +1764,7 @@ Type 'q()' to quit R.
 
 </code></pre>
 
-<p>and press cntr+shift+j and your code should compile in the window running R.</p>
+<p>and press cntrl+shift+j and your code should compile in the window running R.</p>
 
 <p>Now you’re ready to use or learn R in a very nice working environment.</p>
 
