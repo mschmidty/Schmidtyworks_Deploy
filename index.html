@@ -1616,165 +1616,119 @@
     <h1 class="entry-title">
 
 
-    <a href="/blog/2015/05/22/downloading-r.html">Downloading R</a>
+    <a href="/blog/2015/05/22/esa.html">The Endangered Species Act</a>
 
 </h1>
-<div class="entry-content"><p>I recently went to a BLM training that was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
+<div class="entry-content"><p>The Endangered Species Act (ESA) is one fo the most successful conservation Acts in the United States. When challanged, the supreme court determined that the act was intended to <em>“halt and reverse the trend toward species exctinction, whatever the cost.”</em>  Here’s an intro and a little history on the act that is both loved and hated.</p>
 
-<p>Note: I use a mac at home and I downloaded R on my home machine.  I use a PC at work and if I get R working on my work machine I’ll update this tutorial.</p>
+<h2 id="history">History</h2>
 
-<h2 id="the-terminal">The Terminal</h2>
-
-<div class="post-image-icon center">
-<img src="/images/post-images/downloading-r/terminal-icon.png" alt="R Logo" />
+<div class="img-box-shadow-effect">
+  <picture class="full-width">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="/images/post-images/esa/bear-large.jpg" media="(min-width: 1001px)" />
+    <source srcset="/images/post-images/esa/bear-medium.jpg" media="(min-width: 701px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <source srcset="/images/post-images/esa/bear-small.jpg" media="(min-width: 500px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/images/post-images/esa/bear-xsmall.jpg" alt="Man vs the Wild" />
+  </picture>
 </div>
 
-<p>All of this work will be done inside the terminal. Terminal comes pre-installed with Mac OSX and can be found in your utilities folder. If you aren’t familiar with the terminal you should be.  Without going into too much detail the terminal allows you to do really cool things with your machine with short commands.  For example, you can run a server, open a program, create a file, access a remote surver, compile data, make a website, download programs and download and run R. For a short tutorial check <a href="http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">here</a></p>
+<p class="photo-tag">Grizzly bear - Listed as Threatened.  <em>Flickr Commons</em></p>
 
-<h2 id="get-homebrew">Get Homebrew</h2>
+<p>In the early 1900s, due to the extirpation of the passenger pigeon and the near disappearance of the American bison, extinction was introduced into the American lexicon. Over the next half century, the continued decline of several species due to pesticide use, hunting, collection and habitat degradation, kept the plight of species on the minds of the public.</p>
 
-<p>I used homebrew to install “r” and its dependencies on my machine.  If you don’t have homebrew, you can find a tutorial on <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation">how to download it here</a> and <a href="http://brew.sh/">what it is here</a>.</p>
+<p>In 1941, the whooping crane, a bird that ranged from central Canada south to Mexico, from Utah to the Atlantic coast, was reduced to just 16 birds in the wild. The whooping crane’s widespread disappearance received great attention at that time and helped gain support for species protection.</p>
 
-<h2 id="too-technical">Too Technical?</h2>
-<p>You can also download R from a mirror at their <a href="http://www.r-project.org/">website</a> if this all seems a little too technical (but come on, release your inner geek!).</p>
+<p>After several laws that were passed that dealt with hunting and game animal management - <a href="https://www.fws.gov/laws/lawsdigest/migtrea.html">the Migratory Bird Treaty Act of 1918</a>, a treaty prohibiting hunting right and gray whales, and the <a href="http://en.wikipedia.org/wiki/Bald_and_Golden_Eagle_Protection_Act">Bald and Golden Eagle Protection Act of 1940</a> - the mid 1960s saw the passage of laws that dealt with the conservation of species and their habitats.</p>
 
-<h2 id="download">Download</h2>
+<p>In 1966, the Preservation Act was passed by congress.   It  authorized <a href="https://fws.gov">US Fish and Wildlife Service</a> the ability to list US species as endangered, and it allowed them to also spend up to $15 million per year to purchase habitat. The Act also expanded the Secretary of the Interior’s ability to purchase and manage the system of National Wildlife Refuges. In 1969, the act was amended to address the world wide trade and sale of species in danger of extinction, and strengthened the restrictions on the interstate commerce of species within the US.</p>
 
-<div class="post-image-icon center">
-<img src="/images/post-images/downloading-r/rlogo.png" alt="R Logo" />
+<div class="img-box-shadow-effect">
+  <picture class="full-width">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="/images/post-images/esa/bison-large.jpg" media="(min-width: 1001px)" />
+    <source srcset="/images/post-images/esa/bison-medium.jpg" media="(min-width: 701px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <source srcset="/images/post-images/esa/bison-small.jpg" media="(min-width: 500px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/images/post-images/esa/bison-xsmall.jpg" alt="Pen drawing of Bison" />
+  </picture>
 </div>
 
-<p>To download, open up your terminal and type the following as individual commands:</p>
+<p class="photo-tag">American Bison - Historic populations were thought to be in the tens of millions, American bison were hunted to near extinction in the early 1900, approximately 300 remained at that time. Due to conservation populations have recovered to the hundreds of thousands. <em>Flickr Commons</em></p>
 
-<pre><code class="language-bash">$ brew cask install xquartz
-$ brew tap homebrew/science
-$ brew install r
-$ brew doctor
-</code></pre>
+<p>Following the passage of the Preservation Act, Richard Nixon, on December 28, 1973, signed the Endangered Species Act. It followed the passage of the Clean Water Act, the Clean Air Act and the the National Environmental Policy Act. The bones of the act required federal agencies to contribute to the conservation of listed species, as well as:</p>
 
-<p>Its a good idea to check if everything installed correctly by typing:</p>
+<ol>
+  <li>Prohibited the import, export or interstate or foreign sale of endangered and threatened animals and plants without a special permit.</li>
+  <li>Made <strong>take</strong> illegal – forbidding the killing, harming, harassing, pursuing, or removing the species from the wild.</li>
+  <li>Required federal agencies to conduct their activities to recover listed species.</li>
+  <li>Required federal agencies to consult (known as Section 7 Consultation) with the FWS to conserve listed species on federal actions that may harm listed species and only carry out activities that will not <strong>jeopardize</strong> the survival of those species and their associated critical habitat.</li>
+</ol>
 
-<pre><code class="language-bash">
-$ r
-</code></pre>
+<h2 id="esa">ESA</h2>
 
-<p>And you should get the following:</p>
+<p>Surprisingly <a href="http://www.fws.gov/international/pdf/esa.pdf">ESA</a> is only 49 pages and is made up of 18 Sections that lay out how the Service will make “Determination(s) of endangered and threatened species.” - Section 4; Penalties - Section 11; and “Interagency Cooperation” - Section 7. Interestingly in Section 2 the act provides a justification for its passage.  ESA states:</p>
 
-<pre><code class="language-r">
-R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
-Copyright (C) 2015 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin14.3.0 (64-bit)
+<p class="quote"><em>”…various species of fish, wildlife, and plants in the United States have been rendered extinct as a consequence of economic growth and development untempered by adequate concern and conservation; (2) other species of fish, wildlife, and plants have been so depleted in numbers that they are in danger of or threatened with extinction; (3) these species of fish, wildlife, and plants are of aesthetic, ecological, educational, historical, recreational, and scientific value to the Nation and its people;…</em></p>
 
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
+<h2 id="section-7">Section 7</h2>
 
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-&gt;
-
-</code></pre>
-
-<p>Now, with R still running lets try a few things:</p>
-
-<pre><code class="language-r">
-&gt;  x &lt;- 29000+30000 
-&gt;  x
-[1] 59000
-&gt;
-
-</code></pre>
-
-<p>And that’s all there is to it, you have now downloaded R.</p>
-
-<h2 id="sublime-text">Sublime Text</h2>
-
-<div>
-  <img src="/images/post-images/downloading-r/sublime-screen-shot.jpg" alt="Sublime Text 3 Screenshot" />
-</div>
-
-<p class="photo-tag">Screen grab of my whole blog.</p>
-
-<p>Most people can stop here.  You have R downloaded and you can start working with it.  However, if you enjoy improving you work environment like I do you can further improve your workflow if you want. I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
-
-<p>To create a key-binding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
-
-<pre><code class="language-bash">
- // Executes a selection of text in REPL
-{ "keys": ["control+shift+j"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
-
-// Executes the entire file (build) in REPL
-{ "keys": ["control+shift+k"], "command": "repl_transfer_current", "args": {"scope": "file"}},
-   
-// Executes line(s) of text in REPL terminal
-{ "keys": ["control+shift+l"], "command": "repl_transfer_current", "args": {"scope": "lines"}}
-
-</code></pre>
-
-<p>Now we can open sublime create a file like we did above:</p>
-
-<pre><code class="language-r">
-&gt;  x &lt;- 29000+30000 
-&gt;  x
-[1] 59000
-&gt;
-
-</code></pre>
-
-<p>Go to Tools&gt;SublimeREPL&gt;R and an new window should pop up with the R warning:</p>
-
-<pre><code class="language-r">
-R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
-Copyright (C) 2015 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin14.3.0 (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-&gt;
-
-</code></pre>
-
-<p>And you should be able to highlight your r text:</p>
-
-<pre><code class="language-r">
-&gt;  x &lt;- 29000+30000 
-&gt;  x
-[1] 59000
-&gt;
-
-</code></pre>
-
-<p>and press cntrl+shift+j and your code should compile in the window running R.</p>
-
-<p>Now you’re ready to use or learn R in a very nice working environment.</p>
-
-<h2 id="resources">Resources</h2>
+<p>As a biologist I deal with Section 7 of the act the most. Section 7 states:</p>
 
 <ul>
-  <li><a href="https://www.youtube.com/watch?v=qPk0YEKhqB8&amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;index=4">Video on how to use microsoft data in R</a></li>
-  <li><a href="http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf">Stats for Biologists with R</a></li>
-  <li><a href="http://www.alshum.com/sublime/">How to get sublime text working with R</a></li>
+  <li>(2) Federal agencies shall insure, through consultation, that federal actions are <em>“not likely to jeopardize the continued existence of any endangered species or threatened species or result in the destruction or adverse modification of habitat”</em> of listed species.</li>
+  <li>(3) <em>“Federal Agencies shall consult with the Secretary on any prospective agency action at the request of, and in cooperation with prospective permit or license application if the applicant has reason to believe that the endangered or threatened species may be present in the area affected by his project and the implementation of such action will likely affect such species.”</em></li>
+  <li>The section also lays out time frames for consultation, in formal cases it permits the FWS 90 Days once a consultation is submitted to reply with a biological opinion.</li>
 </ul>
+
+<h2 id="consultation">Consultation</h2>
+
+<p>At some point, I intend to dedicate a whole blog post to Section 7 consultation.  However, you can’t write about ESA as a wildlife biologist without at least briefly touching on consultation.</p>
+
+<div class="post-image-icon center">
+<img src="/images/post-images/esa/fws-logo.jpg" alt="Fish and Wildlife Service Logo" />
+</div>
+
+<p>Federal agencies are required to consult with FWS on any actions undertaken or permitted by them that “may affect” listed species or their critical habitat.  So the first determination that a biologist must make while reviewing a federal action, is to determine the level of affect that a project will have on listed species. This determination can result in a <em>“<strong>No Effect</strong>“</em>, <em>“<strong>May affect, but not likely to adversely affect</strong>”</em> or <em>“<strong>May affect, and is likely to adversely affect</strong>”</em> determination on species.  <em>“<strong>No effect</strong>”</em> determinations do not require consultation with FWS, <em>“<strong>…not likely to adversely affect</strong>”</em>  determinations require informal consulation with the FWS - a 30 day process that results in a concurrence letter -, and <em>“<strong>…likely to adversely affect</strong>”</em> determinations require formal consultation - a 90 day process that results in a Biological Opinion (BO) and incidental take permit if the service concurs that the project will not lead to jeopardy.  Determination of affects should be made based on the following definitions:</p>
+
+<ul>
+  <li><em>“<strong>No Effect</strong>”</em> means there will be no impacts, positive or negative, to listed or proposed resources. Generally, this means no listed resources will be exposed to the action and its environmental consequences.</li>
+  <li><em>“<strong>May affect, but not likely to adversely affect</strong>”</em> means that all effects are beneficial, insignificant, or discountable. Beneficial effects have contemporaneous positive effects without any adverse effects to the species or habitat. Insignificant effects relate to the size of the impact and include those effects that are undetectable, not measurable, or cannot be evaluated. Discountable effects are those extremely unlikely to occur. These determinations require written concurrence from the Service.</li>
+  <li><em>“<strong>May affect, and is likely to adversely affect</strong>”</em> means that listed resources are likely to be exposed to the action or its environmental consequences and will respond in a negative manner to the exposure.</li>
+</ul>
+
+<div>
+  <picture class="full-width">
+    <source srcset="/images/post-images/esa/pp-medium.jpg" media="(min-width: 701px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <source srcset="/images/post-images/esa/pp-small.jpg" media="(min-width: 500px)" />
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/images/post-images/esa/pp-xsmall.jpg" alt="Drawing of Passenger Pigeons" />
+  </picture>
+</div>
+
+<p class="photo-tag">Drawing by: Louis Agassiz Fuertes - Passenger Pigeon, extinct 1914</p>
+
+<p>Consultations that lay out the analysis and rationale behind your effects determination are communicated in the form of a Biological Assessment (BA). A BA, as recommended by the Fish and Wildlife Services <a href="https://www.fws.gov/ENDANGERED/esa-library/pdf/esa_section7_handbook.pdf">Consultation Handbook</a>, should include the following sections:</p>
+
+<ol>
+  <li>Introduction - Purpose of BA and Current Management Direction</li>
+  <li>Consultation History</li>
+  <li>Proposed Management Actions and Alternatives Considered</li>
+  <li>Project Area Description</li>
+  <li>Species Considered and Evaluated</li>
+  <li>Evaluated Species Information</li>
+  <li>Environmental Baseline</li>
+  <li>Effects to Evaluated Species and Determinations</li>
+  <li>Effect Determination Summary</li>
+  <li>Additional Conservation Recommendations</li>
+  <li>Literature Cited</li>
+</ol>
+
+<p>There are many nuances to consultation, how long it will take largely depends on how staffed the FWS is at the time and can take longer than listed in the act. Also, what you should include in your BA can depend largely on the individual assigned to your project at the FWS.  Some individuals prefer very detailed BAs, others prefer concise documents that only contain the very minimum amount of information to make a determination.  Although BAs should include <em>“the best available science”</em>, their contents may vary and their creation is something of an art form. Sometimes when writing documents for the federal government it can be easy to get sucked into the <em>“I am just following a process”</em> mentality. But it is important to remember the purpose of the act and use consultation to truly analyze project impacts to species and protect those species accordingly.</p>
 
 </div>
     <h4 class="left margin-main"><a href="/articles">More Articles >></a></h4>
