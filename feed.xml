@@ -6,8 +6,8 @@
 </description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 24 May 2015 16:12:01 -0600</pubDate>
-    <lastBuildDate>Sun, 24 May 2015 16:12:01 -0600</lastBuildDate>
+    <pubDate>Sun, 24 May 2015 16:17:01 -0600</pubDate>
+    <lastBuildDate>Sun, 24 May 2015 16:17:01 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -202,7 +202,6 @@ Type &#39;demo()&#39; for some demos, &#39;help()&#39; for on-line help, or
 Type &#39;q()&#39; to quit R.
 
 &amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now, with R still running lets try a few things:&lt;/p&gt;
@@ -212,7 +211,6 @@ Type &#39;q()&#39; to quit R.
 &amp;gt;  x
 [1] 59000
 &amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And that’s all there is to it, you have now downloaded R.&lt;/p&gt;
@@ -238,7 +236,6 @@ Type &#39;q()&#39; to quit R.
    
 // Executes line(s) of text in REPL terminal
 { &quot;keys&quot;: [&quot;control+shift+l&quot;], &quot;command&quot;: &quot;repl_transfer_current&quot;, &quot;args&quot;: {&quot;scope&quot;: &quot;lines&quot;}}
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now we can open sublime create a file like we did above:&lt;/p&gt;
@@ -248,7 +245,6 @@ Type &#39;q()&#39; to quit R.
 &amp;gt;  x
 [1] 59000
 &amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Go to Tools&amp;gt;SublimeREPL&amp;gt;R and an new window should pop up with the R warning:&lt;/p&gt;
@@ -273,7 +269,6 @@ Type &#39;demo()&#39; for some demos, &#39;help()&#39; for on-line help, or
 Type &#39;q()&#39; to quit R.
 
 &amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And you should be able to highlight your r text:&lt;/p&gt;
@@ -283,7 +278,6 @@ Type &#39;q()&#39; to quit R.
 &amp;gt;  x
 [1] 59000
 &amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;and press cntrl+shift+j and your code should compile in the window running R.&lt;/p&gt;
