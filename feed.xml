@@ -6,8 +6,8 @@
 </description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 19 Feb 2016 18:13:59 -0700</pubDate>
-    <lastBuildDate>Fri, 19 Feb 2016 18:13:59 -0700</lastBuildDate>
+    <pubDate>Wed, 02 Mar 2016 07:39:00 -0700</pubDate>
+    <lastBuildDate>Wed, 02 Mar 2016 07:39:00 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -516,7 +516,7 @@ Type &#39;q()&#39; to quit R.
 
 &lt;p class=&quot;photo-tag&quot;&gt;Screen grab of my whole blog.&lt;/p&gt;
 
-&lt;p&gt;Most people can stop here.  You have R downloaded and you can start working with it.  However, if you enjoy improving you work environment like I do you can further improve your workflow if you want. I have really enjoyed using &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime Text 3&lt;/a&gt; as a text editor (an alternative to this would be to download &lt;a href=&quot;www.rstudio.com/&quot;&gt;R Studio&lt;/a&gt;.  To bring R into an environment that I am familiar with, I downloaded &lt;a href=&quot;https://github.com/wuub/SublimeREPL&quot;&gt;SublimeREPL&lt;/a&gt; using &lt;a href=&quot;https://packagecontrol.io/&quot;&gt;Sublime Package control&lt;/a&gt;.  SublimeREPL allows you to compile R scripts right in the Sublime environment.&lt;/p&gt;
+&lt;p&gt;Most people can stop here.  You have R downloaded and you can start working with it.  However, if you enjoy improving you work environment like I do you can further improve your workflow if you want. I have really enjoyed using &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime Text 3&lt;/a&gt; as a text editor (an alternative to this would be to download &lt;a href=&quot;http://www.rstudio.com/&quot;&gt;R Studio&lt;/a&gt;.  To bring R into an environment that I am familiar with, I downloaded &lt;a href=&quot;https://github.com/wuub/SublimeREPL&quot;&gt;SublimeREPL&lt;/a&gt; using &lt;a href=&quot;https://packagecontrol.io/&quot;&gt;Sublime Package control&lt;/a&gt;.  SublimeREPL allows you to compile R scripts right in the Sublime environment.&lt;/p&gt;
 
 &lt;p&gt;To create a key-binding in Sublime to run R scripts past the following into your Preferences&amp;gt;Key Bindings - User  file:&lt;/p&gt;
 
@@ -577,6 +577,28 @@ Type &#39;q()&#39; to quit R.
 
 &lt;p&gt;Now you’re ready to use or learn R in a very nice working environment.&lt;/p&gt;
 
+&lt;h2 id=&quot;downloading-and-using-packages&quot;&gt;Downloading and using Packages&lt;/h2&gt;
+
+&lt;p&gt;R takes advantage of packages to increase its flexibility. The packages are created by people to do specific things. For example let’s say I want to download a package that can do a power analysis for spacial information.  I search google and find that the &lt;a href=&quot;https://cran.r-project.org/web/packages/rSPACE/index.html&quot;&gt;rSPACE&lt;/a&gt; program does that.  I open up the command line and type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-r&quot;&gt;
+install.packages(&#39;rSPACE&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the command line will ask what mirror you would like to selact.  My closest is California, so I type “20”.  Note that downloading packages won’t work in REPL/Sublime if you have that set up.&lt;/p&gt;
+
+&lt;h3 id=&quot;including-packages-in-a-project&quot;&gt;Including packages in a project&lt;/h3&gt;
+
+&lt;p&gt;To use this package in a script include the following at the beginning of the script to load the package into your project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-r&quot;&gt;
+library(rSPACE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that R libraries disappear at the end of each r session, so you must re-load the the library with each r session.&lt;/p&gt;
+
+&lt;p&gt;More resources: &lt;a href=&quot;https://www.youtube.com/watch?v=3RWb5U3X-T8&amp;amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;amp;index=11&quot;&gt;How to Package on Youtube&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -584,6 +606,8 @@ Type &#39;q()&#39; to quit R.
   &lt;li&gt;&lt;a href=&quot;http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf&quot;&gt;Stats for Biologists with R&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.alshum.com/sublime/&quot;&gt;How to get sublime text working with R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;!--  -----Links --------- --&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 22 May 2015 00:00:00 -0600</pubDate>
