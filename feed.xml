@@ -6,9 +6,186 @@
 </description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 02 Mar 2016 22:14:51 -0700</pubDate>
-    <lastBuildDate>Wed, 02 Mar 2016 22:14:51 -0700</lastBuildDate>
+    <pubDate>Wed, 16 Mar 2016 21:03:16 -0600</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 21:03:16 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Section 7 Consultation</title>
+        <description>&lt;p&gt;This post will go over a general template of what you need in section 7 consultation.  It includes Standardized language (much of which was taken and changed from the National Park Service Section 7 Consultation Guide).  To get background on the Endangered Species Act, and what Section 7 Consultation is all about, check out my older post: &lt;a href=&quot;http://www.schmidtyworks.com/blog/2015/05/22/esa.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Standard Language will be in &lt;em&gt;italics&lt;/em&gt;, have fill in the blanks in &lt;strong&gt;ALL CAPS&lt;/strong&gt; and be in bold.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;1.0 Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Standard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The Endangered Species Act of 1973 (16 U.S.C. 153 et seq.), as amended (ESA or Act) requires lands under federal jurisdiction to conserve and recover listed species and use their authorities in furnace of the purposes of the Act by carrying out programs for the conservation of endangered and threatened species (50 CFR §402). ESA directs all federal agencies to consult (referred to as section 7 consultation) with the FWS when their activities “may affect” a listed species or designated critical habitat. The Act also mandates that federal agencies contribute to the conservation of federally listed species by utilizing their authorities to conserve (recover) federally listed species so that listing is no longer necessary.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;1.1 Purpose&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Sandard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“This biological assessment (BA) analyzes the potential effects of the proposed &lt;strong&gt;INPUT NAME OF PROJECT&lt;/strong&gt; on the &lt;strong&gt;INPUT FIELD OFFICE&lt;/strong&gt; on federally listed threatened species, and critical habitat, pursuant to section 7 of the Endangered Species Act of 1973 (16 U.S.C. 1531-1544), as amended (ESA).  The following federally listed threatened and endangered animal and/or plant species and critical habitat are addressed in this assessment:&lt;strong&gt;ADD A LIST OF SPECIES TO BE IMPACTED&lt;/strong&gt;”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;current-management-direction&quot;&gt;1.2 Current Management Direction&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Sandard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Current management direction for federally listed and proposed threatened and endangered species can be found in the following documents, filed at our office:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Include a list of Documents that pertain to the project.  Examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ESA&lt;/li&gt;
+  &lt;li&gt;Migratory Bird Treaty Act&lt;/li&gt;
+  &lt;li&gt;National Environmental Policy Act&lt;/li&gt;
+  &lt;li&gt;Resource Management Plans&lt;/li&gt;
+  &lt;li&gt;Recovery Plans&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;consultation-history&quot;&gt;2.0 Consultation History&lt;/h2&gt;
+
+&lt;p&gt;Include any conversations with Fish and Wildlife Service pertaining to the project that occurred prior to submission of the BA.&lt;/p&gt;
+
+&lt;h2 id=&quot;proposed-management-action-and-alternatives-considered&quot;&gt;3.0 Proposed Management Action and Alternatives Considered&lt;/h2&gt;
+
+&lt;p&gt;Give a brief description of the management action and/or any alternatives. Keep this section as short as possible, but include enough detail so that the FWS is aware of all impacts.&lt;/p&gt;
+
+&lt;p class=&quot;quote&quot;&gt;“Remember, FWS/NMFS may be unfamiliar with the proposed action. This section should contain everything they need to fully understand the size, scope, and important components of this action.” - National Park Service BA Guide&lt;/p&gt;
+
+&lt;p&gt;Should include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What the project or action is;&lt;/li&gt;
+  &lt;li&gt;where the project is (include map);&lt;/li&gt;
+  &lt;li&gt;when the action is going to take place, time line/implementation schedule;&lt;/li&gt;
+  &lt;li&gt;duration - how long wit it take place;&lt;/li&gt;
+  &lt;li&gt;who is going to do the action and under what authority;&lt;/li&gt;
+  &lt;li&gt;how the action will be accomplished - e.g. bulldozer, pile driver chain saw, backhoe, etc.;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;project-area-description&quot;&gt;4.0 Project Area Description&lt;/h2&gt;
+
+&lt;p&gt;Short description of the project setting. Make sure to clearly define the analysis area.  Include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Description of the project area;&lt;/li&gt;
+  &lt;li&gt;vegetation communities/ecosystems&lt;/li&gt;
+  &lt;li&gt;relevant historical condition and past management activities&lt;/li&gt;
+  &lt;li&gt;existing developments and human uses&lt;/li&gt;
+  &lt;li&gt;current management or activities relevant to the project area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pre-field-review&quot;&gt;5.0 Pre-field Review&lt;/h2&gt;
+
+&lt;p&gt;Obtain a species list from &lt;a href=&quot;http://ecos.fws.gov/ipac/&quot;&gt;IPAC&lt;/a&gt; to determine which species and critical habitat must be included for evaluation within the document.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Standard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“A species list from the FWS on &lt;strong&gt;DATE&lt;/strong&gt;with all federally listed and candidate species within the project location in &lt;strong&gt;LOCATION&lt;/strong&gt; in Colorado was reviewed for this analysis. Using this list, we determined which of those species had a potential to occur within the analysis area (shown in Table &lt;strong&gt;XX&lt;/strong&gt; below). Species not known or with no potential of occurring in the analysis area are documented with rationale in Table &lt;strong&gt;XX&lt;/strong&gt; and will not be discussed further in this document. Excluded species have been dropped from further analysis by meeting one or more of the following conditions:”&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;species does not occur nor is expected in the project area during the time period activities would occur;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;occurs in habitats that are not present; and/or&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;is outside of the geographical or elevational range of the species.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;“In addition, Table 2 below also gives a very brief summary of federally listed/candidate species, designated critical habitat, species’ habitat requirements, and known occurrence information of species that are known or may occur in the analysis area.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“There &lt;strong&gt;IS/IS NOT&lt;/strong&gt; designated critical habitat for federally listed species within the analysis area; therefore, critical habitat &lt;strong&gt;WILL/WILL NOT&lt;/strong&gt; be addressed further in this assessment.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;species-considered-and-evaluated&quot;&gt;Species Considered and Evaluated&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Standard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The following table indicates whether the species from the FWS official species list (dated &lt;strong&gt;DATE&lt;/strong&gt;) are known or expected to occur within the analysis/action area, suitable habitat is present, or if not why they are excluded from further analysis (with rationale).”&lt;/em&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img src=&quot;/images/post-images/section7/table_species_list.jpg&quot; alt=&quot;Section 7 Table Example og a Species list and Rationale&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;photo-tag&quot;&gt;An example list of species to be considered for consultation and the rationale for inclusion and rejection from analysis. (Credit: National Park BA Guide)&lt;/p&gt;
+
+&lt;p&gt;It is also useful to include a list of critical habitat as well.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img src=&quot;/images/post-images/section7/table-critical-habitat.jpg&quot; alt=&quot;Section 7 Example Critical Habitat table and evalution of present habitats&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;evaluated-species&quot;&gt;7.0 Evaluated Species&lt;/h2&gt;
+
+&lt;h2 id=&quot;field-reconnaissance&quot;&gt;7.1 Field Reconnaissance&lt;/h2&gt;
+
+&lt;p&gt;Have you visited the project site? What surveys have you completed? If surveys have not been conducted, but species is present, assume that the species is there.&lt;/p&gt;
+
+&lt;h2 id=&quot;species-status-and-biology&quot;&gt;7.2 Species Status and Biology&lt;/h2&gt;
+
+&lt;p&gt;Include a brief overview of the species and their biology.  Reference the listing document (federal register) for the majority of their biology.  Only include local relevant information in this section.  Do not repeat general known biological traits.&lt;/p&gt;
+
+&lt;h2 id=&quot;environmental-baseline&quot;&gt;8.0Environmental Baseline&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Standard Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“As defined under the ESA, the environmental baseline includes past and present impacts of all federal, state, and private actions in the action area; the anticipated impacts of all proposed federal actions in the action area that have undergone formal or early section 7 consultation; and the impact of state and private actions which are contemporaneous with the section 7 consultation process. Future actions and their potential effects are not included in the environmental baseline. This section in combination with the previous section defines the current status of the species and its habitat in the action area and provides a platform to assess the effects of the proposed action under consultation with the FWS.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;previous-consultations-with-the-fish-and-wildlife-service-within-the-analysis-area&quot;&gt;8.1 Previous Consultations With the Fish and Wildlife Service Within the Analysis Area&lt;/h2&gt;
+
+&lt;p&gt;Include all past consultations (Tails#) that have occurred within the basin and a brief description (two sentences) and date that they occurred.&lt;/p&gt;
+
+&lt;p&gt;Can be included in a table with: Project, Unit, Type of Project, Species Addressed, Determination, Date.&lt;/p&gt;
+
+&lt;h2 id=&quot;past-and-current-activities-within-the-analysis-area&quot;&gt;8.2 Past and Current Activities within the Analysis Area&lt;/h2&gt;
+
+&lt;p&gt;A short narrative about what is currently occurring inside of the analysis area.  Keep it pertinent to the species and the location.  For example: roads, oil and gas development and conversion of habitat to agriculture are all pertinent impacts for Sage-grouse if they are within their range.  A one time survey of the roads by the county is probably does not create a large enough impact to warrant mention in this section.&lt;/p&gt;
+
+&lt;h2 id=&quot;effects-to-evaluated-species-and-determinations&quot;&gt;9.0 Effects to Evaluated Species and Determinations&lt;/h2&gt;
+
+&lt;p&gt;This is the meat of the document.  Everything prepared up to this point is intended to inform the decisions made in this section.&lt;/p&gt;
+
+&lt;p&gt;For each species, discuss the direct, indirect, and cumulative effects and whether there will be any anticipated incidental take.  Based on these effects, make an effect determination.&lt;/p&gt;
+
+&lt;p&gt;Some definitions for clarity:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Direct Effects&lt;/strong&gt; are those caused by the action and occur at the same time and place as the action.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Indirect Effects&lt;/strong&gt; are caused by the action and occur at a later time and/or place and are reasonably certain to occur.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;cumulative-effects&quot;&gt;9.1 Cumulative Effects&lt;/h2&gt;
+&lt;p&gt;Under ESA, cumulative effects include the environmental baseline plus the additive effect of “reasonably certain to occur” state, private and tribal activities.&lt;/p&gt;
+
+&lt;p&gt;First, cumulative effects involve only future non-federal actions: Past and present impacts of non-federal actions are part of the environmental baseline that was previously discussed in Section 8.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;effect-determination&quot;&gt;9.2 Effect determination&lt;/h2&gt;
+
+&lt;p&gt;Make one determination for each species and their critical habitat:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;“&lt;em&gt;No effect&lt;/em&gt;“&lt;/strong&gt; means that there are absolutely NO effects of the project, positive or negative to a listed species of designated critical habitat. &lt;strong&gt;“&lt;em&gt;No effect&lt;/em&gt;“&lt;/strong&gt; does NOT included a small or an effect that is unlikely to occur, rather it means there would be no effects, period.&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;“&lt;em&gt;may effect, not likely to adversely affect&lt;/em&gt;“&lt;/strong&gt; determination means that all direct, indirect effects from the proposed action or its interrelated or interdependent actions to a listed species or designated critical habitat are &lt;em&gt;insignificant&lt;/em&gt; or &lt;em&gt;discountable&lt;/em&gt;. &lt;strong&gt;Insignificant&lt;/strong&gt; effects are very small (immeasurable) in size. &lt;strong&gt;Discountable&lt;/strong&gt; effects are those that are extremely unlikely to occur.  Further, &lt;em&gt;Discountable&lt;/em&gt;, based on someones best judgment, a person would not: (1) be able to meaningfully, measure, detect or evaluate insignificant effects; or (2) expect discountable effects to occur. Use these two words, discountable or insignificant in your rationale for your determination. No incidental take of a listed species can be anticipated.&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;“&lt;em&gt;Beneficial effect&lt;/em&gt;“&lt;/strong&gt; determination is appropriate if all effects are entirely beneficial or positive without any adverse effects to the species or habitat.&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;“&lt;em&gt;may effect, likely to adversely affect&lt;/em&gt;“&lt;/strong&gt; determination means that there is at least one adverse effect that is not insignificant or discountable. In other words, if the adverse effect can be detected in any way or if it can be meaningfully articulated in a discussion of the results, than it is NOT insignificant or discountable.  Project with beneficial and adverse effects is still &lt;strong&gt;“&lt;em&gt;may effect, likely to adversely affect&lt;/em&gt;“&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;additional-conservation-recommendations&quot;&gt;10.0 Additional Conservation Recommendations&lt;/h2&gt;
+&lt;p&gt;This is where you can suggest additional recommendations, mitigation, or conservation measures to further avoid or minimized adverse effects to listed species that are not included in the project description (identified above). Your analysis and effect determinations above should not consider these measures as if they will be implemented. If additional conservation measures (or mitigation) are recommended then additional discussion of how they might further avoid or minimize adverse effects to listed species can be included here. Adoption of recommendations would likely require additional discussion by interdisciplinary team (IDT) members and NEPA analysis to modify the proposed action.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;11.0 Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Re-state the major findings of the BA.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 -0700</pubDate>
+        <link>//blog/2016/03/08/section-7.html</link>
+        <guid isPermaLink="true">//blog/2016/03/08/section-7.html</guid>
+        
+        <category>ESA</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Goals 2016</title>
@@ -405,6 +582,55 @@ Type &#39;q()&#39; to quit R.
 
 &lt;p&gt;Now you’re ready to use or learn R in a very nice working environment.&lt;/p&gt;
 
+&lt;h2 id=&quot;getting-sublime-working-on-windows&quot;&gt;Getting Sublime Working on Windows&lt;/h2&gt;
+
+&lt;p&gt;Add package &lt;a href=&quot;https://github.com/wuub/SublimeREPL&quot;&gt;SublimeREPL&lt;/a&gt; with the sublime package manager.  Then open &lt;em&gt;Preferences&amp;gt;Browse Packages&amp;gt;&lt;/em&gt;. Then browse &lt;em&gt;SublimeREPL&amp;gt;config&amp;gt;R&lt;/em&gt; and &lt;em&gt;open Main.sublime-menu&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-JSON&quot;&gt;
+[
+     {
+        &quot;id&quot;: &quot;tools&quot;,
+        &quot;children&quot;:
+        [{
+            &quot;caption&quot;: &quot;SublimeREPL&quot;,
+            &quot;mnemonic&quot;: &quot;R&quot;,
+            &quot;id&quot;: &quot;SublimeREPL&quot;,
+            &quot;children&quot;:
+            [
+                {&quot;command&quot;: &quot;repl_open&quot;,
+                 &quot;caption&quot;: &quot;R&quot;,
+                 &quot;id&quot;: &quot;repl_r&quot;,
+                 &quot;mnemonic&quot;: &quot;R&quot;,
+                 &quot;args&quot;: {
+                    &quot;type&quot;: &quot;subprocess&quot;,
+                    &quot;external_id&quot;: &quot;r&quot;,
+                    &quot;additional_scopes&quot;: [&quot;tex.latex.knitr&quot;],
+                    &quot;encoding&quot;: {
+                        &quot;windows&quot;: &quot;$win_cmd_encoding&quot;,
+                        &quot;linux&quot;: &quot;utf8&quot;,
+                        &quot;osx&quot;: &quot;utf8&quot;
+                        },
+                    &quot;soft_quit&quot;: &quot;\nquit(save=\&quot;no\&quot;)\n&quot;,
+                    &quot;cmd&quot;: {&quot;windows&quot;: [&quot;C:/EDIT/THIS/TO/R/R-3.2.0/bin/x64/Rterm.exe&quot;, &quot;--ess&quot;, &quot;--encoding=$win_cmd_encoding&quot;]},
+                    &quot;cwd&quot;: &quot;$file_path&quot;,
+                    &quot;extend_env&quot;: {&quot;windows&quot;: {&quot;PATH&quot;: &quot;{PATH}:/C/EDIT/THIS/TO/R/R-3.2.0/bin&quot;}},
+                    &quot;cmd_postfix&quot;: &quot;\n&quot;,
+                    &quot;suppress_echo&quot;: {&quot;osx&quot;: true,
+                                      &quot;linux&quot;: true,
+                                      &quot;windows&quot;: false},
+                    &quot;syntax&quot;: &quot;Packages/R/R Console.tmLanguage&quot;
+                    }
+                }
+            ]
+        }]
+    }
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit both: ‘ “extend_env”: {“windows”: {“PATH”: “{PATH}:/C/EDIT/THIS/TO/R/R-3.2.0/bin”}}’  and  ‘ “cmd”: {“windows”: [“C:/EDIT/THIS/TO/R/R-3.2.0/bin/x64/Rterm.exe”, “–ess”, “–encoding=$win_cmd_encoding”]}, ‘ So that the /EDIT/THIS/TO section goes to wherever the files in R are being stored.&lt;/p&gt;
+
+&lt;p&gt;Then you should be able to go to &lt;em&gt;Tools&amp;gt;SublimeREPL&amp;gt;R&lt;/em&gt; and a separate window should start that will run your R scripts.   To run code highlight R code you want to run (That should be in a separate R file) and press cntrl+shift+j.  The codes should run in the R window. For other ways to run code chekc out &lt;a href=&quot;http://www.kevjohnson.org/using-r-in-sublime-text-3/&quot;&gt;this&lt;/a&gt; post.&lt;/p&gt;
+
 &lt;h2 id=&quot;downloading-and-using-packages&quot;&gt;Downloading and using Packages&lt;/h2&gt;
 
 &lt;p&gt;R takes advantage of packages to increase its flexibility. The packages are created by people to do specific things. For example let’s say I want to download a package that can do a power analysis for spacial information.  I search google and find that the &lt;a href=&quot;https://cran.r-project.org/web/packages/rSPACE/index.html&quot;&gt;rSPACE&lt;/a&gt; program does that.  I open up the command line and type:&lt;/p&gt;
@@ -433,6 +659,7 @@ library(rSPACE)
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qPk0YEKhqB8&amp;amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;amp;index=4&quot;&gt;Video on how to use microsoft data in R&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf&quot;&gt;Stats for Biologists with R&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.alshum.com/sublime/&quot;&gt;How to get sublime text working with R&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pages.uoregon.edu/megen/rateOfMovement/rateOfMovementOverlay_slides.pdf&quot;&gt;Visualization of GPS collar data with R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;!--  -----Links --------- --&gt;&lt;/p&gt;
