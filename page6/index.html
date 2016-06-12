@@ -10,7 +10,7 @@
     <meta name="description" content="My thoughts on land management as a wildlife biologist for the Bereau of Land Management. 
 ">
     <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="canonical" href="//portfolio/">
+    <link rel="canonical" href="//page6/">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/prism.js" async></script>
     <script>
@@ -1609,32 +1609,256 @@
 
       <main id="content">
 
-        <div class="module col-1 portfolio">
-  <h1>Portfolio</h1>
-  <h2>Mike Schmidt</h2>
-  <p>I'm a self made web developer.  Wildlife biologist by training and profession.  I believe in simplicity and space in design. Here's what I've made.</p>
+          <div class="blog-index">
+    <article class="module col-1">
 
-  <h2>Print</h2>
-  <section class="print flex-container flex-row justify-content-around flex-center">
-    <div class="flex-items width-215">
-      <img src="/images/portfolio/dining_for_recycling_2014.jpg" alt"Dining for Recycling event poster 2014. With sponsors. ">
-    </div>
-    <div class="flex-items width-370">
-      <img  src="/images/portfolio/wedding_invite.jpg" alt"#####">
-    </div>
-    <div class="flex-items width-215">
-      <img src="/images/portfolio/dining_for_recycling_2015.jpg" alt"Dining for Recycling event poster 2014. With sponsors. ">
-    </div> 
-  </section>
-  <h2>Web</h2>
-  <section class="web">
-    
-  </section>
-  <h2>Photography</h2>
-  <section class="photography">
-    
-  </section>
+      <!-- This loops through the paginated posts -->
+      
+        <h1><a href="/blog/2015/05/22/downloading-r.html">Downloading R</a></h1>        
+         <p class="post-meta"></p>        
+        <div class="content">
+          <p>I recently went to a BLM training that was put on by the <a href="http://jornada.nmsu.edu/">Jornada Research Station</a>.  I was very impressed with how forward thinking they were in their approach to science. They were using wep apps, programming and technology in general to help them more efficiently do their jobs.  In their training they talked many times about using an open source software called <a href="http://www.r-project.org/">R</a> to analyze data.  Being the computer geek that I am I had to download it.  Here’s  a quick tutorial on how I did it….</p>
+
+<p>Note: I use a mac at home and I downloaded R on my home machine.  I use a PC at work and if I get R working on my work machine I’ll update this tutorial.</p>
+
+<h2 id="the-terminal">The Terminal</h2>
+
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/terminal-icon.png" alt="R Logo" />
 </div>
+
+<p>All of this work will be done inside the terminal. Terminal comes pre-installed with Mac OSX and can be found in your utilities folder. If you aren’t familiar with the terminal you should be.  Without going into too much detail the terminal allows you to do really cool things with your machine with short commands.  For example, you can run a server, open a program, create a file, access a remote surver, compile data, make a website, download programs and download and run R. For a short tutorial check <a href="http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">here</a></p>
+
+<h2 id="get-homebrew">Get Homebrew</h2>
+
+<p>I used homebrew to install “r” and its dependencies on my machine.  If you don’t have homebrew, you can find a tutorial on <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation">how to download it here</a> and <a href="http://brew.sh/">what it is here</a>.</p>
+
+<h2 id="too-technical">Too Technical?</h2>
+<p>You can also download R from a mirror at their <a href="http://www.r-project.org/">website</a> if this all seems a little too technical (but come on, release your inner geek!).</p>
+
+<h2 id="download">Download</h2>
+
+<div class="post-image-icon center">
+<img src="/images/post-images/downloading-r/rlogo.png" alt="R Logo" />
+</div>
+
+<p>To download, open up your terminal and type the following as individual commands:</p>
+
+<pre><code class="language-bash">$ brew cask install xquartz
+$ brew tap homebrew/science
+$ brew install r
+$ brew doctor
+</code></pre>
+
+<p>Its a good idea to check if everything installed correctly by typing:</p>
+
+<pre><code class="language-bash">
+$ r
+</code></pre>
+
+<p>And you should get the following:</p>
+
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt;
+</code></pre>
+
+<p>Now, with R still running lets try a few things:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+</code></pre>
+
+<p>And that’s all there is to it, you have now downloaded R.</p>
+
+<h2 id="sublime-text">Sublime Text</h2>
+
+<div>
+  <img src="/images/post-images/downloading-r/sublime-screen-shot.jpg" alt="Sublime Text 3 Screenshot" />
+</div>
+
+<p class="photo-tag">Screen grab of my whole blog.</p>
+
+<p>Most people can stop here.  You have R downloaded and you can start working with it.  However, if you enjoy improving you work environment like I do you can further improve your workflow if you want. I have really enjoyed using <a href="https://www.sublimetext.com/">Sublime Text 3</a> as a text editor (an alternative to this would be to download <a href="http://www.rstudio.com/">R Studio</a>.  To bring R into an environment that I am familiar with, I downloaded <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> using <a href="https://packagecontrol.io/">Sublime Package control</a>.  SublimeREPL allows you to compile R scripts right in the Sublime environment.</p>
+
+<p>To create a key-binding in Sublime to run R scripts past the following into your Preferences&gt;Key Bindings - User  file:</p>
+
+<pre><code class="language-bash">
+ // Executes a selection of text in REPL
+{ "keys": ["control+shift+j"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+
+// Executes the entire file (build) in REPL
+{ "keys": ["control+shift+k"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+   
+// Executes line(s) of text in REPL terminal
+{ "keys": ["control+shift+l"], "command": "repl_transfer_current", "args": {"scope": "lines"}}
+</code></pre>
+
+<p>Now we can open sublime create a file like we did above:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+</code></pre>
+
+<p>Go to Tools&gt;SublimeREPL&gt;R and an new window should pop up with the R warning:</p>
+
+<pre><code class="language-r">
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin14.3.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt;
+</code></pre>
+
+<p>And you should be able to highlight your r text:</p>
+
+<pre><code class="language-r">
+&gt;  x &lt;- 29000+30000 
+&gt;  x
+[1] 59000
+&gt;
+</code></pre>
+
+<p>and press cntrl+shift+j and your code should compile in the window running R.</p>
+
+<p>Now you’re ready to use or learn R in a very nice working environment.</p>
+
+<h2 id="getting-sublime-working-on-windows">Getting Sublime Working on Windows</h2>
+
+<p>Add package <a href="https://github.com/wuub/SublimeREPL">SublimeREPL</a> with the sublime package manager.  Then open <em>Preferences&gt;Browse Packages&gt;</em>. Then browse <em>SublimeREPL&gt;config&gt;R</em> and <em>open Main.sublime-menu</em>.</p>
+
+<pre><code class="language-JSON">
+[
+     {
+        "id": "tools",
+        "children":
+        [{
+            "caption": "SublimeREPL",
+            "mnemonic": "R",
+            "id": "SublimeREPL",
+            "children":
+            [
+                {"command": "repl_open",
+                 "caption": "R",
+                 "id": "repl_r",
+                 "mnemonic": "R",
+                 "args": {
+                    "type": "subprocess",
+                    "external_id": "r",
+                    "additional_scopes": ["tex.latex.knitr"],
+                    "encoding": {
+                        "windows": "$win_cmd_encoding",
+                        "linux": "utf8",
+                        "osx": "utf8"
+                        },
+                    "soft_quit": "\nquit(save=\"no\")\n",
+                    "cmd": {"windows": ["C:/EDIT/THIS/TO/R/R-3.2.0/bin/x64/Rterm.exe", "--ess", "--encoding=$win_cmd_encoding"]},
+                    "cwd": "$file_path",
+                    "extend_env": {"windows": {"PATH": "{PATH}:/C/EDIT/THIS/TO/R/R-3.2.0/bin"}},
+                    "cmd_postfix": "\n",
+                    "suppress_echo": {"osx": true,
+                                      "linux": true,
+                                      "windows": false},
+                    "syntax": "Packages/R/R Console.tmLanguage"
+                    }
+                }
+            ]
+        }]
+    }
+]
+</code></pre>
+
+<p>Edit both: ‘ “extend_env”: {“windows”: {“PATH”: “{PATH}:/C/EDIT/THIS/TO/R/R-3.2.0/bin”}}’  and  ‘ “cmd”: {“windows”: [“C:/EDIT/THIS/TO/R/R-3.2.0/bin/x64/Rterm.exe”, “–ess”, “–encoding=$win_cmd_encoding”]}, ‘ So that the /EDIT/THIS/TO section goes to wherever the files in R are being stored.</p>
+
+<p>Then you should be able to go to <em>Tools&gt;SublimeREPL&gt;R</em> and a separate window should start that will run your R scripts.   To run code highlight R code you want to run (That should be in a separate R file) and press cntrl+shift+j.  The codes should run in the R window. For other ways to run code chekc out <a href="http://www.kevjohnson.org/using-r-in-sublime-text-3/">this</a> post.</p>
+
+<h2 id="downloading-and-using-packages">Downloading and using Packages</h2>
+
+<p>R takes advantage of packages to increase its flexibility. The packages are created by people to do specific things. For example let’s say I want to download a package that can do a power analysis for spacial information.  I search google and find that the <a href="https://cran.r-project.org/web/packages/rSPACE/index.html">rSPACE</a> program does that.  I open up the command line and type:</p>
+
+<pre><code class="language-r">
+install.packages('rSPACE')
+</code></pre>
+
+<p>In the command line will ask what mirror you would like to selact.  My closest is California, so I type “20”.  Note that downloading packages won’t work in REPL/Sublime if you have that set up.</p>
+
+<h3 id="including-packages-in-a-project">Including packages in a project</h3>
+
+<p>To use this package in a script include the following at the beginning of the script to load the package into your project:</p>
+
+<pre><code class="language-r">
+library(rSPACE)
+</code></pre>
+
+<p>Note that R libraries disappear at the end of each r session, so you must re-load the the library with each r session.</p>
+
+<p>More resources: <a href="https://www.youtube.com/watch?v=3RWb5U3X-T8&amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;index=11">How to Package on Youtube</a></p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=qPk0YEKhqB8&amp;list=PLqzoL9-eJTNBDdKgJgJzaQcY6OXmsXAHU&amp;index=4">Video on how to use microsoft data in R</a></li>
+  <li><a href="http://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf">Stats for Biologists with R</a></li>
+  <li><a href="http://www.alshum.com/sublime/">How to get sublime text working with R</a></li>
+  <li><a href="http://pages.uoregon.edu/megen/rateOfMovement/rateOfMovementOverlay_slides.pdf">Visualization of GPS collar data with R</a></li>
+</ul>
+
+<p><!--  -----Links --------- --></p>
+
+
+        </div>
+      
+
+    </article>
+    <!-- Pagination links -->
+    <div class="pagination">
+      
+        <a href="/page5" class="previous">Previous</a>
+      
+      <span class="page_number ">Page: 6 of 10</span>
+      
+        <a href="/page7" class="next">Next</a>
+      
+    </div>
+  </div>
+
       </main>
 
 

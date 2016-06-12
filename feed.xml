@@ -6,13 +6,110 @@
 </description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 16 Mar 2016 21:03:16 -0600</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2016 21:03:16 -0600</lastBuildDate>
+    <pubDate>Sun, 12 Jun 2016 14:23:01 -0600</pubDate>
+    <lastBuildDate>Sun, 12 Jun 2016 14:23:01 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>A Research Process</title>
+        <description>&lt;p&gt;Like anything, when putting together a research project it is helpful to have a defined system or process to follow.  I’ve recently found that processes and systems help you define a plan, keep data collection consistent, and they help you communicate project design to field personnel.  It is also helpful for multi-year projects to make your research plans iterative, helping you improve over time.&lt;/p&gt;
+
+&lt;h2 id=&quot;one-set-goals&quot;&gt;One: Set goals&lt;/h2&gt;
+&lt;p&gt;Step one of the research process is to ask yourself: what do you want to learn, what is my goal, or what question do I have.  At first, I had a hard time wrapping my head around this.  I thought with enough random points, and a solid data collection methodology, the data would ultimately answer the &lt;em&gt;“what do I want to learn question”&lt;/em&gt; after it was collected.  That might seem a bit dim witted of me but it seemed hard to ask a question before you had some data to base your question on.  Like how do I know to look for different types of vegetation in different grazing pastures if I don’t know if the vegetation is different in the first place.&lt;/p&gt;
+
+&lt;p&gt;Once I did start with a question, though, things fell in place much easier.  My research goal was:&lt;/p&gt;
+
+&lt;p class=&quot;quote&quot;&gt;&lt;em&gt;“Why do grouse use the areas that they do?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My office put GPS collars on 2 sage-grouse last year and two more this year.  Before we put the collars out we thought that we had a pretty good idea of where grouse where in the areas and why they were using certain areas. The points proved otherwise.  Grouse were using small concentrated areas that we didn’t really think they would use.  And they weren’t all using the same areas.  So we wanted to know why they were using the areas they were.  What were they keying in on.&lt;/p&gt;
+
+&lt;h2 id=&quot;two-set-the-scope-of-your-project&quot;&gt;Two: Set the Scope of Your Project&lt;/h2&gt;
+
+&lt;p&gt;How are you going to collect these data so that your goals are met and your questions are answered? Where do you want to collect your information? Has anyone tried to answer the same questions before? How did they get their answer?  Could I do the same thing? What time period should I collect this information for?&lt;/p&gt;
+
+&lt;p&gt;This is the brainstorming portion of the process.&lt;/p&gt;
+
+&lt;h2 id=&quot;three-gather-existing-information&quot;&gt;Three: Gather Existing Information&lt;/h2&gt;
+
+&lt;p&gt;This is also a good time to figure out if you even need to do the study. Ask yourself: &lt;em&gt;“Has anyone ever figured this out before?”&lt;/em&gt;  In my experience the answer is usually NO.  There’s so little research out there answering really complex biological questions.   And even if someone has done the research before, if you have the time, there’s no reason to not repeat a study, particularly if you think that your research will improve the scientific communities understanding of a question.&lt;/p&gt;
+
+&lt;h2 id=&quot;four-choose-a-sampling-unit-and-a-measurement-technique&quot;&gt;Four: Choose a Sampling Unit and a Measurement Technique&lt;/h2&gt;
+
+&lt;p&gt;This is where I would do you research and use well understood, repeatable study methodologies.  Also consider &lt;a href=&quot;https://en.wikipedia.org/wiki/Stratified_sampling&quot;&gt;stratification&lt;/a&gt; of your sample.  Is there a way to divide up your sample so that it gives you a more accurate answer to your question?  For example: if you plan on sampling vegetation, sometimes it is appropriate to stratify or divide your sample by dominant vegetation type. If you are looking for plant height, and you measure sagebrush height and ponderosa pine height within the same sample, your average will give you a poor understanding of sagebrush height and ponderosa pine height.  If you stratify your sample into, sage areas and ponderosa areas, averaging ponderosa ans sage heights separately, you will get a much better idea of what height each vegetation type is.&lt;/p&gt;
+
+&lt;h2 id=&quot;five-write-out-your-methods-before-you-begin&quot;&gt;Five: Write out your methods before you begin&lt;/h2&gt;
+&lt;p&gt;This is the time to write everything down.  Even if you are following existing methods, you will need to add the specifics for your research. Think about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Where will the study be performed? What is it’s extent?&lt;/li&gt;
+  &lt;li&gt;What is your sample size?&lt;/li&gt;
+  &lt;li&gt;How did you determine that?&lt;/li&gt;
+  &lt;li&gt;When will your study be performed?&lt;/li&gt;
+  &lt;li&gt;What methods will you be using, exactly, and are you using some or all of existing methods?&lt;/li&gt;
+  &lt;li&gt;Who will be conducting the research?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;six-collect-the-data&quot;&gt;Six: Collect the data.&lt;/h2&gt;
+&lt;p&gt;Implement your plan.  Ah, field work.&lt;/p&gt;
+
+&lt;h2 id=&quot;seven-organize-enter-and-analyze-your-data&quot;&gt;Seven: Organize, enter and analyze your data.&lt;/h2&gt;
+
+&lt;p&gt;Create a database or spreadsheet, enter the data into the database or spreadsheet and analyze the data.&lt;/p&gt;
+
+&lt;p&gt;I haven’t done this yet, but if you are collecting the same data repeatedly, it can be really helpful to use a program such as &lt;a href=&quot;http://www.schmidtyworks.com/blog/2015/05/22/downloading-r.html&quot;&gt;R&lt;/a&gt; to analyze your data.&lt;/p&gt;
+
+&lt;h2 id=&quot;eight-report-your-conclusions&quot;&gt;Eight: Report your conclusions&lt;/h2&gt;
+&lt;p&gt;Remember, no one will likely come in after you and synthesize your data for you.   If you don’t report it, it didn’t happen.&lt;/p&gt;
+
+&lt;p&gt;Keep it short, and to the point.  It’s good to follow typical scientific journal formatting.  However, for internal reports it can be good to cut out the introduction if it won’t add to the understanding of your readers.&lt;/p&gt;
+
+&lt;h2 id=&quot;keep-it-manageable&quot;&gt;Keep it manageable&lt;/h2&gt;
+
+&lt;p&gt;Don’t do so much that you can’t complete anything at all.  Always be asking, is this too big to complete? Do I need to complete all of this, this year?&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Jun 2016 00:00:00 -0600</pubDate>
+        <link>//blog/2016/06/01/reasearch-system.html</link>
+        <guid isPermaLink="true">//blog/2016/06/01/reasearch-system.html</guid>
+        
+        <category>science</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Section 7 Consultation</title>
         <description>&lt;p&gt;This post will go over a general template of what you need in section 7 consultation.  It includes Standardized language (much of which was taken and changed from the National Park Service Section 7 Consultation Guide).  To get background on the Endangered Species Act, and what Section 7 Consultation is all about, check out my older post: &lt;a href=&quot;http://www.schmidtyworks.com/blog/2015/05/22/esa.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-primer&quot;&gt;A Primer&lt;/h2&gt;
+&lt;p&gt;Before we go over a template it consider the following.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-the-purpose-of-a-biological-assessment&quot;&gt;What is the purpose of a biological assessment?:&lt;/h3&gt;
+
+&lt;p class=&quot;quote&quot;&gt;“To describe all the probable effects to a listed species or designated critical habitat, make a project effects determination, using the correct wording and criteria, for the decision record, and to submit to the Services for consultation.” &lt;br /&gt; Doug Laye&lt;/p&gt;
+
+&lt;h3 id=&quot;consultation-must-include&quot;&gt;Consultation must include:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A description of the action to be considered;&lt;/li&gt;
+  &lt;li&gt;A description of the specific area that may be affected by the action;&lt;/li&gt;
+  &lt;li&gt;A description of any listed species or critical habitat that may be affected by the action;&lt;/li&gt;
+  &lt;li&gt;A description of the manner in which the action may affect any listed species or critical habitat and an analysis of any cumulative effects;&lt;/li&gt;
+  &lt;li&gt;Relevant reports, including any environmental impact statement, environmental assessment, or biological assessment prepared; and&lt;/li&gt;
+  &lt;li&gt;Any other relevant available information on the action, the affected listed species, or critical habitat.” [CFR 402.14(c)]&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;in-cases-of-uncertainty&quot;&gt;In cases of uncertainty:&lt;/h3&gt;
+
+&lt;p&gt;Uncertainty cannot, and will not, be satisfied with silence. We must fill the space with professional judgment based on all the information we have.&lt;/p&gt;
+
+&lt;p&gt;We use soft data, deduction, observation, extrapolation AND we have to explain why that is reasonable, and what the ramifications may be from the way we structured our assumptions.&lt;/p&gt;
+
+&lt;p&gt;The standard for our documents is whether our analysis is reasonable, rational , nonarbitrary; the standard does not require complete absolute knowledge.&lt;/p&gt;
+
+&lt;h1 id=&quot;ba-template&quot;&gt;BA Template&lt;/h1&gt;
 
 &lt;p&gt;Standard Language will be in &lt;em&gt;italics&lt;/em&gt;, have fill in the blanks in &lt;strong&gt;ALL CAPS&lt;/strong&gt; and be in bold.&lt;/p&gt;
 
@@ -191,7 +288,7 @@
         <title>Goals 2016</title>
         <description>&lt;p&gt;I’ve been contributing to this blog for a little over a year now.  My first post was in September of 2014, and it laid out some goals. I’d like to look back at what I have done so far, see if I have met my goals, and make some goals for 2016 to keep me motivated.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-did-i-do&quot;&gt;How did I do?&lt;/h2&gt;
+&lt;h2 id=&quot;did-i-succeed&quot;&gt;Did I succeed?&lt;/h2&gt;
 &lt;p&gt;The goals &lt;a href=&quot;http://www.schmidtyworks.com/blog/2014/09/24/Why-am-i-blogging.html&quot;&gt;that I set&lt;/a&gt;  were for the end of 2014, and on those, I’m at least a year late. But that’s OK. This year I had a ton of stuff going on.  So the fact that I made time to contribute at all was good.&lt;/p&gt;
 
 &lt;ol&gt;

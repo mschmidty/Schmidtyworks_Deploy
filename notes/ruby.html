@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>The Web and Biology | Schmidtyworks</title>
+    <title>Learning Ruby on Rails</title>
     <meta name="description" content="My thoughts on land management as a wildlife biologist for the Bereau of Land Management. 
 ">
     <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="canonical" href="//portfolio/">
+    <link rel="canonical" href="//notes/ruby.html">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/prism.js" async></script>
     <script>
@@ -1609,31 +1609,259 @@
 
       <main id="content">
 
-        <div class="module col-1 portfolio">
-  <h1>Portfolio</h1>
-  <h2>Mike Schmidt</h2>
-  <p>I'm a self made web developer.  Wildlife biologist by training and profession.  I believe in simplicity and space in design. Here's what I've made.</p>
+        <div class="post">
 
-  <h2>Print</h2>
-  <section class="print flex-container flex-row justify-content-around flex-center">
-    <div class="flex-items width-215">
-      <img src="/images/portfolio/dining_for_recycling_2014.jpg" alt"Dining for Recycling event poster 2014. With sponsors. ">
-    </div>
-    <div class="flex-items width-370">
-      <img  src="/images/portfolio/wedding_invite.jpg" alt"#####">
-    </div>
-    <div class="flex-items width-215">
-      <img src="/images/portfolio/dining_for_recycling_2015.jpg" alt"Dining for Recycling event poster 2014. With sponsors. ">
-    </div> 
-  </section>
-  <h2>Web</h2>
-  <section class="web">
-    
-  </section>
-  <h2>Photography</h2>
-  <section class="photography">
-    
-  </section>
+  <div class="post-header module col-1">
+    <h1 class="post-title">Learning Ruby on Rails</h1>
+    <p class="post-meta">Apr 1, 2016</p>
+  </div>
+
+  <article class="module col-1">
+    <h2 id="start-project-with-mamp">Start Project with MAMP</h2>
+
+<p>Go to folder that you want your ruby app in and:</p>
+
+<pre><code class="language-bash">
+rails new app name -d mysql
+</code></pre>
+
+<p>Then add in MAMP Socket to the config/database.yml file and also add the password to mysql.</p>
+
+<pre><code class="language-bash">
+/Applications/MAMP/tmp/mysql/mysql.sock
+</code></pre>
+
+<p>Then in your gem file add:</p>
+
+<pre><code class="language-bash">
+gem 'mysql2', '~&gt; 0.3.20'
+</code></pre>
+
+<p>and then type bundle into the command line to get everything running correctly.</p>
+
+<p>Since I run mySQL from MAMP, you might need to run the following in the command line to point your computer to MAMPs version of mySQL. 
+<a href="https://boriskuzmanovic.wordpress.com/2008/11/26/mamp-error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-tmpmysqlsock-2/">heres notes on a solution</a></p>
+
+<pre><code class="language-bash">
+sudo ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock
+</code></pre>
+
+<p>And then run the following in the command line.</p>
+
+<pre><code class="language-bash">
+rake db:create
+</code></pre>
+
+<p>Then go to http://localhost:3000/ and you should get the <a href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjUsFpdjO13jiu5LnJoclMDW8J0M-nVuVIBpFKzmIujN0R1oVUYMAXO00pfw">ruby start screen</a>.</p>
+
+<h2 id="the-basics">The Basics</h2>
+
+<p>Ruby on Rails is a MVC framework or Model-View-Controller.  The basics of each part:</p>
+
+<ul>
+  <li>The <strong>Model</strong> is the data structures and the methods to access them in general.  It also stores the data that is retrieved according to the commands from the controller and displayed in the view.</li>
+  <li>The <strong>Views</strong> are the templetes that render the data.</li>
+  <li>The <strong>Controller</strong> accepts input and converts it to commands for the model or the view. It can also send commands to the model to update the model’s state.</li>
+</ul>
+
+<h2 id="basic-app">Basic App</h2>
+
+<h3 id="first-create-a-controller">First Create a controller</h3>
+
+<pre><code class="language-bash">
+bin/rails generate controller welcome index
+</code></pre>
+
+<p>This will create a new controller, and run the “controller” generator and tell it you want a controller called “welcome” with an action called “index”, just like this.</p>
+
+<h3 id="update-the-view">Update the view</h3>
+
+<p>Got to app/views/index.html.erb and edit the file to includ whatever.  This is editing the view.</p>
+
+<h3 id="create-a-route">Create a route</h3>
+
+<p>Go to config/routes.rb</p>
+
+<pre><code class="language-bash">
+Rails.application.routes.draw do 
+  root 'welcome#index'  
+end
+</code></pre>
+
+<p>root ‘welcome#index’ tells Rails to map requests to the root of the application to the welcome controller’s index action and get ‘welcome/index’ tells Rails to map requests to http://localhost:3000/welcome/index to the welcome controller’s index action. This was created earlier when you ran the controller generator (bin/rails generate controller welcome index).</p>
+
+<h2 id="more-complex-nowcrud-action">More complex now:CRUD action</h2>
+
+<p>CRUD: create, update and destroy</p>
+
+<h3 id="create-routes-to-articles">Create routes to articles</h3>
+
+<p>In your config&gt;routes.rb file add resources :articles so that the file looks like this:</p>
+
+<pre><code class="language-bash">
+Rails.application.routes.draw do 
+  resources :articles //New part
+  root 'welcome#index'  
+end
+</code></pre>
+
+<p>Then in the command line run:</p>
+
+<pre><code class="language-bash">
+bin/rake routes
+Running via Spring preloader in process 15261
+      Prefix Verb   URI Pattern                  Controller#Action
+    articles GET    /articles(.:format)          articles#index
+             POST   /articles(.:format)          articles#create
+ new_article GET    /articles/new(.:format)      articles#new
+edit_article GET    /articles/:id/edit(.:format) articles#edit
+     article GET    /articles/:id(.:format)      articles#show
+             PATCH  /articles/:id(.:format)      articles#update
+             PUT    /articles/:id(.:format)      articles#update
+             DELETE /articles/:id(.:format)      articles#destroy
+        root GET    /
+</code></pre>
+
+<p>The combination of adding resoureces to the routes.rb and running rake will create a variety of routes. On a vary basic level, this action allows paths to new pages.</p>
+
+<h3 id="create-controller-for-articles">Create Controller for articles</h3>
+
+<pre><code class="language-bash">
+$ bin/rails generate controller articles
+</code></pre>
+
+<p>This create a controller for articles. Navigate to http://localhost:3000/articles/new and you should get an error saying “<em>unknown action</em>”.  To fix this, go to app/controllers/articles_controller.rb and add:</p>
+
+<pre><code class="language-ruby">
+class ArticlesController &lt; ApplicationController
+  def new
+  end
+end
+</code></pre>
+
+<h3 id="creating-a-view-file">Creating a View File</h3>
+
+<p>Refresh and you should get one more error that says “<em>Template Missing</em>”.  To finish out the sequence you need to add a template in the: app/views/articles/ folder. Save the files as new.hmtl.erb. The error should go away. You can add HTML to it now.</p>
+
+<h3 id="make-a-form">Make a form</h3>
+
+<p>To make a form we need to add some html and erb to our file.  The basic form looks like this:</p>
+
+<pre><code class="language-bash">
+&lt;h1&gt;New Article&lt;/h1&gt;
+
+&lt;%= form_for :article, url: articles_path do |f| %&gt;
+
+  &lt;p&gt;
+    &lt;%= f.label :title %&gt; &lt;br&gt;
+    &lt;%= f.text_field :title %&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;%= f.label :text %&gt; &lt;br&gt;
+    &lt;%= f.text_area :text %&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;%= f.submit %&gt;
+  &lt;/p&gt;
+&lt;%end%&gt;
+</code></pre>
+
+<p>You need to look closer into the “url: articles_path do” part of the above code.  It redirects your action after submit.</p>
+
+<h3 id="create-action-in-controller">Create action in controller</h3>
+
+<p>If you submitted the form you’d get an unknown action error.  You need to create the action in the app\controller\articles_controller.rb</p>
+
+<pre><code class="language-bash">
+class ArticlesController &lt; ApplicationController
+  def new
+  end
+
+  def create //This is the part that you are adding
+  end //This too. 
+end
+</code></pre>
+
+<p>This sends the info to the database that we are about to create.  If you submit again, you’ll get an error.</p>
+
+<h3 id="creating-model-database">Creating Model/ Database</h3>
+
+<p>To create the model, in the command line enter the following:</p>
+
+<pre><code class="language-bash">
+bin/rails generate model Article title:string text:text
+</code></pre>
+
+<p>This will create a migration file that will create a table with the fields, title and text, the first a string and the second a text area in your database.  Look into db/migrate/20140120191729_create_articles.rb (the name may be slightly different). This tells rails how to make the database migration.  This migration can be undon too, which is nice.  To migrate the DB, run in the command line:</p>
+
+<pre><code class="language-bash">
+rake db:migrate
+</code></pre>
+
+<h3 id="finish-articlecontroller-create">Finish article_controller “create”</h3>
+
+<p>Inside of the create method we need to add what we want it to do.  What we want is for the data from our form to go to the database after we have pressed submit. To do this, we need to enter the following into our articles_controller.rb file:</p>
+
+<pre><code class="language-bash">
+def create
+  @article = Article.new(params[:article])  //Add this
+
+  @article.save //Add this
+  redirect_to @article //Add this
+end
+
+</code></pre>
+
+<p>We can almost submit our form. But first we need to tell rails that it is ok to submit these things to the database. Rails forces this step to make sure malicious stuff can’t be added to our database. Below  the cod listed above add.</p>
+
+<h3 id="show-the-article">Show the article</h3>
+
+<p>So that rails knows what article we are trying to show after submit we need to create an action that will show.  If you look at the rake routes for articles bash, under articles#show you see the URI says /articles/:id.  So we need to create a action called show that finds the id for articles.</p>
+
+<pre><code class="language-bash">
+def show
+  @article = Article.find(params[:id])
+end
+</code></pre>
+
+<p>and then change the create so all of it looks like:</p>
+
+<pre><code class="language-bash">def create
+  @article = Article.new(article_params)
+
+  @article.save
+  redirect_to @article
+end
+
+private
+
+  def articles_params
+    params.require(:article).permit(:title, :text)
+  end
+</code></pre>
+
+<p>After we enter that in the controller we need to create a view that the information will be shown on.</p>
+
+<pre><code class="language-markup">&lt;h2&gt;&lt;%= @article.title %&gt;&lt;/h2&gt;
+ 
+&lt;p&gt;
+  &lt;%= @article.text %&gt;
+&lt;/p&gt;
+</code></pre>
+
+<p>The show page is created.</p>
+
+<h3 id="creating-an-index">Creating an index</h3>
+
+<h3 id="tutorials">Tutorials</h3>
+<ul>
+  <li><a href="https://www.smashingmagazine.com/2009/03/getting-started-with-ruby-on-rails/">an overview of ruby on rails</a></li>
+  <li><a href="https://www.youtube.com/watch?v=fd1Vn-Wvy2w">todo list</a></li>
+</ul>
+
+
+  </article>
+
 </div>
       </main>
 
